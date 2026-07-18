@@ -1,0 +1,17 @@
+$kind: http-request
+name: Get All Items
+method: GET
+url: '{{baseUrl}}/items/'
+order: 2000
+queryParams:
+  - key: skip
+    value: '0'
+    description: Number of records to skip (pagination)
+    disabled: true
+  - key: limit
+    value: '100'
+    description: Maximum number of records to return
+    disabled: true
+description: |-
+  Retrieves a list of all inventory items.
+  Supports pagination via `skip` and `limit` query parameters.

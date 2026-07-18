@@ -1,0 +1,21 @@
+$kind: http-request
+name: Update Item
+method: PUT
+url: '{{baseUrl}}/items/1'
+order: 4000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Cisco Catalyst 9300",
+      "category": "Networking",
+      "serial_number": "CSCO-SW-9300",
+      "quantity": 5,
+      "status": "Active"
+    }
+description: |-
+  Updates all fields of an existing inventory item by its ID.
+  Returns 404 if the item is not found.

@@ -1,0 +1,8 @@
+$kind: http-request
+name: Get Item by ID
+method: GET
+url: '{{baseUrl}}/items/1'
+order: 3000
+description: |-
+  Retrieves a single inventory item by its ID.
+  Returns 404 if the item is not found.

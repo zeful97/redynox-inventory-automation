@@ -1,0 +1,8 @@
+$kind: collection
+name: Redynox Zeful Inventory API
+description: |-
+  A full CRUD REST API for managing hardware inventory assets.
+  Built with FastAPI and SQLAlchemy.
+variables:
+  - key: baseUrl
+    value: 'http://127.0.0.1:8000'

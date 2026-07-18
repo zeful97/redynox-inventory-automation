@@ -1,0 +1,27 @@
+$kind: http-request
+name: Create Item
+method: POST
+url: '{{baseUrl}}/items/'
+order: 1000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Cisco Catalyst 9300",
+      "category": "Networking",
+      "serial_number": "CSCO-SW-9300",
+      "quantity": 2,
+      "status": "Active"
+    }
+description: |-
+  Creates a new inventory item. Returns 400 if the serial number is already registered.
+
+  **Required fields:**
+  - name (string)
+  - category (string)
+  - serial_number (string, must be unique)
+  - quantity (integer, must be > 0)
+  - status (string, default: "Active")

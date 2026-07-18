@@ -1,0 +1,13 @@
+{
+    "api_url": "http://127.0.0.1:8000/items/",
+    "default_format": "both",
+    "notify_on_completion": true,
+    "email_notifications": {
+        "enabled": true,
+        "smtp_server": "smtp.gmail.com",
+        "smtp_port": 587,
+        "sender_email": "zefuljosephb@gmsil.com",
+        "sender_password": "",
+        "receiver_email": "banda.j@tyreking.biz.zm"
+    }
+}

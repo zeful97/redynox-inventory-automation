@@ -1,0 +1,17 @@
+# Environments
+venv/
+env/
+__pycache__/
+
+# Logs and Databases
+*.log
+*.sqlite3
+automation_execution.log
+
+# Security & Config
+config.json
+.env
+
+# Generated Reports
+*.csv
+*.pdf

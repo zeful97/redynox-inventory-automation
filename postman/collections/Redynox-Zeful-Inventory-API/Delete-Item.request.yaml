@@ -1,0 +1,9 @@
+$kind: http-request
+name: Delete Item
+method: DELETE
+url: '{{baseUrl}}/items/1'
+order: 5000
+description: |-
+  Deletes an inventory item by its ID.
+  Returns a confirmation message on success.
+  Returns 404 if the item is not found.
